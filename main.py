@@ -1,4 +1,5 @@
 from speech import listen
+from commands import execute_command
 
 print("🤖 Jarvis Started")
 
@@ -9,4 +10,9 @@ while True:
     if "hey jarvis" in text:
 
         print("✅ Activated!")
-        break
+
+        print("🎤 Waiting for your command...")
+
+        command = listen()
+
+        execute_command(command)
