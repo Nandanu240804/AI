@@ -1,0 +1,8 @@
+SpeechRecognition
+PyAudio
+pyautogui
+pyttsx3
+numpy
+pvrecorder
+openwakeword
+sounddevice
