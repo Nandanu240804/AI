@@ -11,8 +11,15 @@ while True:
 
         print("✅ Activated!")
 
-        print("🎤 Waiting for your command...")
+        while True:
 
-        command = listen()
+            command = listen()
 
-        execute_command(command)
+            if command == "":
+                continue
+
+            if "goodbye" in command or "exit" in command:
+                print("👋 Jarvis going back to sleep...")
+                break
+
+            execute_command(command)
